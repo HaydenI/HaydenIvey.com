@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="24"
+   height="24"
+   viewBox="0 0 24 24"
+   fill="none"
+   version="1.1"
+   id="svg28"
+   sodipodi:docname="8bitservers.svg"
+   inkscape:version="1.2.1 (9c6d41e410, 2022-07-14)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview30"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="32"
+     inkscape:cx="9.75"
+     inkscape:cy="9.1875"
+     inkscape:window-width="2560"
+     inkscape:window-height="1387"
+     inkscape:window-x="1912"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs26">
+    <clipPath
+       id="clip0">
+      <rect
+         width="24"
+         height="17"
+         fill="white"
+         transform="translate(0 3.5)"
+         id="rect23" />
+    </clipPath>
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="matrix(0.43423052,0,0,0.43423052,-18.295362,-30.440396)">
+    <g
+       aria-label="&gt;:_"
+       id="text1045"
+       style="font-size:50.8px;stroke:#000000;stroke-width:0.265"
+       transform="matrix(0.78799388,0,0,0.78799388,10.428386,20.435783)">
+      <path
+         d="M 64.507187,91.695998 40.421836,101.98994 V 97.549904 L 59.49664,89.637209 40.421836,81.798928 V 77.358889 L 64.507187,87.52881 Z"
+         style="font-family:Arial;-inkscape-font-specification:Arial;fill:#b5b5b5;fill-opacity:1;stroke:#b5b5b5;stroke-opacity:1"
+         id="path2290" />
+      <path
+         d="m 71.898985,86.338185 v -5.08496 h 5.084961 v 5.08496 z m 0,21.257615 v -5.08496 h 5.084961 v 5.08496 z"
+         style="font-family:Arial;-inkscape-font-specification:Arial;fill:#b5b5b5;fill-opacity:1;stroke:#b5b5b5;stroke-opacity:1"
+         id="path2292" />
+      <path
+         d="m 80.655039,117.69131 v -3.22461 h 29.591991 v 3.22461 z"
+         style="font-family:Arial;-inkscape-font-specification:Arial;fill:#b5b5b5;fill-opacity:1;stroke:#b5b5b5;stroke-opacity:1"
+         id="path2294" />
+    </g>
+  </g>
+</svg>
