@@ -6,62 +6,77 @@
     <meta name="description" content="My Virtual Business Card">
     <meta name="author" content="Hayden Ivey">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#000000">
+
+    <!-- Open Graph / Social -->
+    <meta property="og:type" content="profile">
+    <meta property="og:title" content="Hayden Ivey">
+    <meta property="og:description" content="My Virtual Business Card">
+    <meta property="og:image" content="https://cactusrigging.com/assets/img/hi.webp">
+
+    <!-- Preload poster image for video fallback -->
+    <link rel="preload" as="image" href="images/background_poster.webp">
+    <link rel="preload" as="font" href="fonts/open-sans-v34-vietnamese_latin-ext_latin_hebrew_greek-ext_greek_cyrillic-ext_cyrillic-regular.woff2" crossorigin type="font/woff2">
+
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/skeleton-light.css">
     <link rel="stylesheet" href="css/brands.css">
+    <link rel="stylesheet" href="css/a11y.css">
 </head>
 <body>
-    <video playsinline autoplay muted loop poster="images/background_poster.webp" id="bgvid">
+    <!-- Skip to main content for keyboard/screen reader users -->
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+    <!-- Background video: purely decorative, hidden from assistive tech -->
+    <video playsinline autoplay muted loop poster="images/background_poster.webp" id="bgvid" aria-hidden="true">
         <source src="videos/background.webm" type="video/webm">
         <source src="videos/background.mp4" type="video/mp4">
     </video>
-    <div class="container">
-        <div class="row">
-            <div class="column" style="margin-top: 10%">
-                <img src="https://cactusrigging.com/assets/img/hi.jpg" class="avatar" alt="Picture of me">
-                <h1>Hayden Ivey</h1>
-                <p>A Sailor With Many Hats</p>
-                <a class="button button-default" href="mailto:Hayden@Ivey.pro" target="_blank" rel="noopener">
-                    <img class="icon" src="images/icons/email.svg" alt="Email Icon">Hayden@Ivey.pro</a>
-                <br>
-                <a class="button button-default" href="http://www.linkedin.com/in/haydenivey/" target="_blank"
-                    rel="noopener">
-                    <img class="icon" src="images/icons/linkedin.svg" alt="LinkedIn Logo">LinkedIn</a>
-                <br>
-                <a class="button button-default" href="https://github.com/HaydenI/" target="_blank" rel="noopener">
-                    <img class="icon" src="images/icons/github.svg" alt="GitHub Logo">GitHub</a>
-                <br>
-                <a class="button button-default" href="https://www.instagram.com/captainivey/" target="_blank"
-                    rel="noopener">
-                    <img class="icon" src="images/icons/instagram.svg" alt="Instagram Logo">Instagram</a>
-                <br>
-                <!-- YouTube
-                <a class="button button-default" href="https://www.youtube.com/@Captain_Ivey" target="_blank"
-                    rel="noopener">
-                    <img class="icon" src="images/icons/youtube.svg" alt="YouTube Logo">YouTube</a>
-                <br>-->
-                <a class="button button-default" href="https://discordapp.com/users/640332168735752194" target="_blank"
-                    rel="noopener">
-                    <img class="icon" src="images/icons/discord.svg" alt="Discord Logo">Discord</a>
-                <br>
-                <a class="button button-default" href="https://cactusrigging.com" target="_blank" rel="noopener">
-                    <img class="icon" src="images/icons/cactusrigging.svg" alt="Cactus Rigging Logo">Cactus Rigging</a>
-                <br>
-                <a class="button button-default" href="https://haydenivey.com/key.txt" target="_blank" rel="noopener">
-                    <img class="icon" src="images/icons/key.svg" alt="PGP Key Logo">PGP Key</a>
-                <br>
-                <a class="button button-default" href="https://ts.la/hayden25544" target="_blank" rel="noopener">
-                    <img class="icon" src="images/icons/tesla.svg" alt="Tesla Logo">Tesla</a>
-                <br>
-                <a class="button button-default"
-                    href="https://www.starlink.com/residential?referral=RC-2819905-71323-65&app_source=share"
-                    target="_blank" rel="noopener">
-                    <img class="icon" src="images/icons/starlink.svg" alt="Starlink Logo">Starlink</a>
-                <br>
 
-                <br>
+    <!-- Content overlay for consistent contrast against the video -->
+    <div class="content-overlay"></div>
+
+    <main id="main-content">
+        <div class="container">
+            <img src="https://cactusrigging.com/assets/img/hi.webp" class="avatar" alt="Photo of Hayden Ivey">
+            <h1>Hayden Ivey</h1>
+            <p>A Sailor With Many Hats</p>
+
+            <div class="links-list">
+                <a class="button button-default" href="mailto:Hayden@Ivey.pro" rel="noopener" aria-label="Send me an email at Hayden@Ivey.pro">
+                    <img class="icon" src="images/icons/email.svg" alt="">Email</a>
+
+                <a class="button button-default" href="http://www.linkedin.com/in/haydenivey/" target="_blank" rel="noopener" aria-label="View my LinkedIn profile">
+                    <img class="icon" src="images/icons/linkedin.svg" alt="">LinkedIn</a>
+
+                <a class="button button-default" href="https://github.com/HaydenI/" target="_blank" rel="noopener" aria-label="View my GitHub profile">
+                    <img class="icon" src="images/icons/github.svg" alt="">GitHub</a>
+
+                <a class="button button-default" href="https://www.instagram.com/captainivey/" target="_blank" rel="noopener" aria-label="View my Instagram profile">
+                    <img class="icon" src="images/icons/instagram.svg" alt="">Instagram</a>
+
+                <!-- YouTube (commented out — uncomment when ready) -->
+                <!--
+                <a class="button button-default" href="https://www.youtube.com/@Captain_Ivey" target="_blank" rel="noopener" aria-label="View my YouTube channel">
+                    <img class="icon" src="images/icons/youtube.svg" alt="">YouTube</a>
+                -->
+
+                <a class="button button-default" href="https://discordapp.com/users/640332168735752194" target="_blank" rel="noopener" aria-label="Message me on Discord">
+                    <img class="icon" src="images/icons/discord.svg" alt="">Discord</a>
+
+                <a class="button button-default" href="https://cactusrigging.com" target="_blank" rel="noopener" aria-label="Visit Cactus Rigging website">
+                    <img class="icon" src="images/icons/cactusrigging.svg" alt="">Cactus Rigging</a>
+
+                <a class="button button-default" href="https://haydenivey.com/key.txt" target="_blank" rel="noopener" aria-label="Download my PGP public key">
+                    <img class="icon" src="images/icons/key.svg" alt="">PGP Key</a>
+
+                <a class="button button-default" href="https://ts.la/hayden25544" target="_blank" rel="noopener" aria-label="Sign up for Tesla">
+                    <img class="icon" src="images/icons/tesla.svg" alt="">Tesla</a>
+
+                <a class="button button-default" href="https://www.starlink.com/residential?referral=RC-2819905-71323-65&app_source=share" target="_blank" rel="noopener" aria-label="Sign up for Starlink">
+                    <img class="icon" src="images/icons/starlink.svg" alt="">Starlink</a>
             </div>
         </div>
-    </div>
+    </main>
 </body>
 </html>
