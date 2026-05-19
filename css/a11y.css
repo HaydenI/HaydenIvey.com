@@ -1,0 +1,208 @@
+/* ==========================================================================
+   Hayden Ivey — Accessibility-First Personal Site Styles
+   ========================================================================== */
+
+/* --- Skip Link --- */
+.skip-link {
+  position: absolute;
+  top: -100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #fff;
+  color: #000;
+  padding: 12px 24px;
+  border-radius: 0 0 8px 8px;
+  font-weight: 700;
+  text-decoration: none;
+  z-index: 9999;
+  transition: top 0.2s ease;
+}
+.skip-link:focus {
+  top: 0;
+  outline: 3px solid #fbbf24;
+  outline-offset: -3px;
+}
+
+/* --- Background Video --- */
+#bgvid {
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -2;
+}
+
+/* --- Content Overlay --- */
+.content-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.55);
+  z-index: -1;
+}
+
+/* --- Main Content --- */
+main {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  text-align: center;
+  margin: 0 auto;
+  padding: 40px 20px;
+  box-sizing: border-box;
+}
+
+.container-left {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  text-align: left;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.column {
+  position: center;
+  width: 100%;
+  float: center;
+  box-sizing: border-box;
+}
+
+/* For devices larger than 400px */
+@media (min-width: 400px) {
+  .container {
+    width: 85%;
+    padding: 40px 0;
+  }
+}
+
+/* For devices larger than 550px */
+@media (min-width: 550px) {
+  .container {
+    width: 80%;
+  }
+  .column,
+  .columns {
+    margin-left: 0;
+  }
+  .column:first-child,
+  .columns:first-child {
+    margin-left: 0;
+  }
+}
+
+/* --- Avatar --- */
+.avatar {
+  width: 128px;
+  height: 128px;
+  object-fit: cover;
+  background-position: center;
+  border-radius: 50%;
+  margin-bottom: 16px;
+}
+
+/* --- Heading & Subtitle --- */
+h1 {
+  margin-top: 0;
+  margin-bottom: 8px;
+  font-weight: 800;
+  color: #fff;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+h1 + p {
+  margin-top: 0;
+  margin-bottom: 24px;
+  font-size: 18px;
+  color: #e0e0e0;
+  font-weight: 400;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Larger than phablet */
+@media (min-width: 550px) {
+  h1 {
+    font-size: 48px;
+    line-height: 96px;
+  }
+}
+
+/* --- Links List (button container) --- */
+.links-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+}
+
+/* --- Buttons --- */
+.button,
+button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-start;
+  text-decoration: none;
+  height: 48px;
+  padding: 0 16px;
+  text-align: left;
+  vertical-align: middle;
+  font-size: 18px;
+  width: 100%;
+  max-width: 300px;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: 0.1px;
+  white-space: nowrap;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.button:hover,
+.button:focus {
+  filter: brightness(90%);
+  outline: 3px solid #fbbf24;
+  outline-offset: 2px;
+}
+
+/* --- Focus Visible (keyboard nav) --- */
+*:focus-visible {
+  outline: 3px solid #fbbf24;
+  outline-offset: 2px;
+}
+
+/* --- Reduced Motion --- */
+@media (prefers-reduced-motion: reduce) {
+  .skip-link {
+    transition: none;
+  }
+  #bgvid {
+    display: none;
+  }
+  .content-overlay {
+    background: rgba(0, 0, 0, 0.85);
+  }
+}
+
+/* --- High Contrast Mode --- */
+@media (forced-colors: active) {
+  .skip-link {
+    border: 2px solid ButtonText;
+  }
+  .button {
+    border: 1px solid ButtonText;
+  }
+}
